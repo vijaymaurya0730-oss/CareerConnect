@@ -1,0 +1,1 @@
+{% extends 'base.html' %}{% block content %}<h2>My applications</h2>{% for a in applications %}<div class="card"><h3>{{a.title}} · {{a.company}}</h3><p>{{a.location}} · Applied {{a.applied_at}}</p><span class="tag">{{a.status}}</span></div>{% else %}<div class="card">You have not applied to any jobs yet.</div>{% endfor %}{% endblock %}
